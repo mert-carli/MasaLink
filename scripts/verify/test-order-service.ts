@@ -1,4 +1,4 @@
-import { OrderService } from '../src/server/services/orderService';
+import { OrderService } from '../../src/server/services/orderService';
 
 async function testOrderService() {
   console.log('================================================================');

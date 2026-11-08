@@ -1,4 +1,4 @@
-import { AdminCrudService } from '../src/server/services/adminCrudService';
+import { AdminCrudService } from '../../src/server/services/adminCrudService';
 import { RoleKey, TableSection, KitchenStation } from '@prisma/client';
 import bcrypt from 'bcryptjs';
 
