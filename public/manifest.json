@@ -1,0 +1,55 @@
+{
+  "name": "MasaLink | Bulut Restoran POS & QR Menü",
+  "short_name": "MasaLink",
+  "description": "Restoranlar, kafeler ve garsonlar için yeni nesil temassız QR sipariş, mutfak KDS ve bulut POS ekosistemi",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "orientation": "any",
+  "categories": ["business", "food", "productivity"],
+  "icons": [
+    {
+      "src": "/masalink-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/masalink-3d-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/MasaLink Logosu.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Garson Terminali",
+      "short_name": "Garson",
+      "description": "Hızlı PIN ile Garson Terminaline Giriş",
+      "url": "/waiter/login",
+      "icons": [{ "src": "/masalink-logo-sm.webp", "sizes": "96x96" }]
+    },
+    {
+      "name": "Kasa & POS",
+      "short_name": "Kasa",
+      "description": "Kasiyer ve Adisyon Ekranı",
+      "url": "/pos/login",
+      "icons": [{ "src": "/masalink-logo-sm.webp", "sizes": "96x96" }]
+    },
+    {
+      "name": "Yönetim Paneli",
+      "short_name": "Yönetim",
+      "description": "Admin Kokpit ve Raporlar",
+      "url": "/admin",
+      "icons": [{ "src": "/masalink-logo-sm.webp", "sizes": "96x96" }]
+    }
+  ]
+}

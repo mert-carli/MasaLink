@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: masalink-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: masalink
+      POSTGRES_PASSWORD: masalink_dev_pw
+      POSTGRES_DB: masalink
+    ports:
+      - "5432:5432"
+    volumes:
+      - masalink_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U masalink -d masalink"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  masalink_pgdata:

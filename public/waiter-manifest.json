@@ -1,0 +1,48 @@
+{
+  "name": "MasaLink | Garson Mobil Terminali",
+  "short_name": "Garson POS",
+  "description": "Garsonlar ve servis personeli için dokunmatik mobil sipariş terminali",
+  "start_url": "/waiter",
+  "scope": "/waiter",
+  "display": "standalone",
+  "background_color": "#070a12",
+  "theme_color": "#070a12",
+  "orientation": "portrait",
+  "categories": ["business", "food", "productivity"],
+  "icons": [
+    {
+      "src": "/masalink-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/masalink-3d-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/MasaLink Logosu.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Garson Girişi",
+      "short_name": "PIN Girişi",
+      "description": "PIN Kodu ile Garson Girişi Yap",
+      "url": "/waiter/login",
+      "icons": [{ "src": "/masalink-logo-sm.webp", "sizes": "96x96" }]
+    },
+    {
+      "name": "Masalar",
+      "short_name": "Masalar",
+      "description": "Masa Haritası ve Siparişler",
+      "url": "/waiter",
+      "icons": [{ "src": "/masalink-logo-sm.webp", "sizes": "96x96" }]
+    }
+  ]
+}
