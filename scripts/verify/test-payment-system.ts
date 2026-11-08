@@ -1,10 +1,10 @@
 import crypto from 'crypto';
-import { PaymentService } from '../src/server/payment/paymentService';
-import { IyzicoProvider } from '../src/server/payment/providers/iyzicoProvider';
-import { PayTRProvider } from '../src/server/payment/providers/paytrProvider';
-import { realtimeHub } from '../src/server/realtime/realtimeHub';
-import { getStoredTables, saveStoredTables, INITIAL_TABLES } from '../src/utils/tableData';
-import { CacheService } from '../src/server/redis/cacheService';
+import { PaymentService } from '../../src/server/payment/paymentService';
+import { IyzicoProvider } from '../../src/server/payment/providers/iyzicoProvider';
+import { PayTRProvider } from '../../src/server/payment/providers/paytrProvider';
+import { realtimeHub } from '../../src/server/realtime/realtimeHub';
+import { getStoredTables, saveStoredTables, INITIAL_TABLES } from '../../src/utils/tableData';
+import { CacheService } from '../../src/server/redis/cacheService';
 
 async function runPaymentSystemTests() {
   console.log('========================================================================');

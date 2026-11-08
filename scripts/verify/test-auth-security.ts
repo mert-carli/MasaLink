@@ -1,6 +1,6 @@
 import bcrypt from 'bcryptjs';
-import { getJwtSecret, getInternalSyncKey, getBridgeSecret } from '../src/server/security/secrets';
-import { createSignedSessionToken, verifySignedSessionToken } from '../src/utils/tenantAuth';
+import { getJwtSecret, getInternalSyncKey, getBridgeSecret } from '../../src/server/security/secrets';
+import { createSignedSessionToken, verifySignedSessionToken } from '../../src/utils/tenantAuth';
 
 async function testAuthSecurity() {
   console.log('================================================================');

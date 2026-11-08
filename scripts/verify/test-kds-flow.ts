@@ -1,6 +1,6 @@
-import { realtimeHub } from '../src/server/realtime/realtimeHub';
-import { OrderService } from '../src/server/services/orderService';
-import { SyncMessage } from '../src/utils/syncService';
+import { realtimeHub } from '../../src/server/realtime/realtimeHub';
+import { OrderService } from '../../src/server/services/orderService';
+import { SyncMessage } from '../../src/utils/syncService';
 
 async function testFullKdsFlow() {
   console.log('========================================================================');

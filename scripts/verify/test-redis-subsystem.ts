@@ -1,14 +1,14 @@
-import { redis } from '../src/server/redis/redisClient';
+import { redis } from '../../src/server/redis/redisClient';
 import {
   tryAcquireDistributedLock,
   acquireDistributedLock,
   releaseDistributedLock,
   withDistributedLock,
-} from '../src/server/redis/distributedLock';
-import { DistributedRateLimiter } from '../src/server/redis/rateLimiter';
-import { CacheService } from '../src/server/redis/cacheService';
-import { realtimeHub } from '../src/server/realtime/realtimeHub';
-import { enforcePinRateLimit, recordFailedPinAttempt, recordSuccessfulPinAttempt } from '../src/utils/pinRateLimiter';
+} from '../../src/server/redis/distributedLock';
+import { DistributedRateLimiter } from '../../src/server/redis/rateLimiter';
+import { CacheService } from '../../src/server/redis/cacheService';
+import { realtimeHub } from '../../src/server/realtime/realtimeHub';
+import { enforcePinRateLimit, recordFailedPinAttempt, recordSuccessfulPinAttempt } from '../../src/utils/pinRateLimiter';
 
 async function runRedisSubsystemTests() {
   console.log('================================================================');

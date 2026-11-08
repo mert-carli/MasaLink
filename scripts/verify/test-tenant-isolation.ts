@@ -1,5 +1,5 @@
-import { createTenantDb } from '../src/server/db/tenantDb';
-import { TenantIsolationViolationError } from '../src/server/db/tenantContext';
+import { createTenantDb } from '../../src/server/db/tenantDb';
+import { TenantIsolationViolationError } from '../../src/server/db/tenantContext';
 
 async function testTenantIsolation() {
   console.log('================================================================');
